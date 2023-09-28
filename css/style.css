@@ -1,0 +1,223 @@
+/* Fuente FontAwesome */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'FontAwesome', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+#header {
+    padding: 1em 0;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    flex: 1;
+}
+
+#header .logo {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    text-decoration: none;
+    margin-right: 1em;
+    transition: color 0.3s;
+}
+
+#nav a:hover {
+    color: #486B46;
+}
+
+/* Banner */
+#banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: left;
+    padding: 2em 2.5em;
+}
+
+#banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    #banner {
+        padding: 2em 1em;
+    }
+}
+
+/* Secciones */
+section {
+    padding: 3em 5%;
+    margin: 1em 0;
+    flex: 1;
+}
+
+/* Servicios */
+#services .card {
+    border: none;
+}
+
+#services .card img {
+    max-width: 100%;
+}
+
+#services .card-body {
+    text-align: left;
+}
+
+/* Formulario de Contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #486B46;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+button.btn {
+    background-color: #486B46;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #486B46;
+}
+
+/* Footer */
+.pie-pagina {
+    width: 100%;
+    background-color: #486B46;
+}
+
+.pie-pagina .grupo-1 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+    background-color: #486B46;
+}
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #fafafa;
+}
+
+.pie-pagina .grupo-1 .box p {
+    margin-bottom: 10px;
+    color: #fafafa;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    color: #fafafa;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: #AEB896;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header .inner {
+        margin: 0;
+        padding: 0 2%;
+    }
+
+    section {
+        padding: 2em 5%;
+    }
+}
