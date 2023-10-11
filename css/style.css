@@ -8,12 +8,13 @@
 
 /* Estilos generales */
 body {
-    font-family: 'FontAwesome', sans-serif;
+    font-family: sans-serif; /* Cambiado a una fuente genérica */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #fff; /* Agregado color de fondo */
 }
 
 /* Header */
@@ -150,12 +151,11 @@ button.btn:hover {
     background-color: #486B46;
 }
 
-.pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+.pie-pagina .grupo-1 .box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .pie-pagina .grupo-1 .box figure img {
