@@ -1,16 +1,14 @@
 {
   "name": "web-constrserv",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cristian Villarruel",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.2",
-    "sass": "^1.69.2"
-  },
-  "keywords": [],
-  "description": ""
+    "sass": "^1.69.3"
+  }
 }
