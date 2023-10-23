@@ -8,13 +8,13 @@
 }
 /* Estilos generales */
 body {
-  font-family: sans-serif; /* Cambiado a una fuente genérica */
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #fff; /* Agregado color de fondo */
+  background-color: #fff;
 }
 
 /* Header */
@@ -23,7 +23,7 @@ body {
 }
 #header .inner {
   display: flex;
-  justify-content: space between;
+  justify-content: space-between;
   align-items: center;
   margin: 0 5%;
   flex: 1;
@@ -75,13 +75,7 @@ section {
 
 /* Servicios */
 #services .card {
-  border: none;
-}
-#services .card img {
-  max-width: 100%;
-}
-#services .card .card-body {
-  text-align: left;
+  border: 1px solid #ccc;
 }
 
 /* Formulario de Contacto */
@@ -185,7 +179,7 @@ form .form-group button.btn:hover {
     padding: 35px 0px;
   }
 }
-@media screen and (max-width: 800px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #header .inner {
     margin: 0;
     padding: 0 2%;
@@ -194,5 +188,3 @@ form .form-group button.btn:hover {
     padding: 2em 5%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
