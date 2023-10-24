@@ -1,9 +1,4 @@
-@font-face {
-  font-family: "FontAwesome";
-  src: url("/fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+/* Estilos generales */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -12,72 +7,99 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #fff;
+  /* Header */
+  /* Estilo visual personalizado navbar */
+  /* Banner */
+  /* Responsiveness */
+  /* Secciones */
+  /* Servicios */
+  /* Formulario de Contacto */
+  /* Footer */
+  /* Responsiveness */
 }
-
-#header {
+body #header {
   padding: 1em 0;
 }
-#header .inner {
+body #header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 5%;
   flex: 1;
 }
-#header .inner .logo {
+body #header .inner .logo {
   font-size: 1.5em;
   text-decoration: none;
+  color: #fafafa;
 }
-#header .inner #nav {
+body #header #nav {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#header .inner #nav a {
+body #header #nav a {
   text-decoration: none;
   margin-right: 1em;
   transition: color 0.3s;
+  color: #fafafa;
 }
-#header .inner #nav a:hover {
-  color: #486B46;
+body #header #nav a:hover {
+  color: #0d2033;
 }
-
-#banner {
+body .navbar {
+  background-color: #486B46;
+}
+body .navbar a {
+  color: #fafafa;
+}
+body .navbar .btn-outline-success {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+body .navbar .btn-outline-success:hover {
+  background-color: #fafafa !important;
+  color: #198754 !important;
+}
+body #banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: left;
   padding: 2em 2.5em;
 }
-#banner h1 {
+body #banner h1 {
   font-size: 2.5em;
   margin: 0;
 }
-
 @media screen and (max-width: 768px) {
-  #banner {
+  body #banner {
     padding: 2em 1em;
   }
+  body #header .inner {
+    margin: 0;
+    padding: 0 2%;
+  }
+  body section {
+    padding: 2em 5%;
+  }
 }
-section {
+body section {
   padding: 3em 5%;
   margin: 1em 0;
   flex: 1;
 }
-
-#services .card {
+body #services .card {
   border: 1px solid #ccc;
 }
-
-form {
+body form {
   max-width: 600px;
   margin: 0 auto;
 }
-form .form-group {
+body form .form-group {
   margin-bottom: 20px;
 }
-form .form-group .form-control {
+body form .form-group .form-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -85,13 +107,13 @@ form .form-group .form-control {
   font-size: 16px;
   transition: border-color 0.3s;
 }
-form .form-group .form-control:focus {
+body form .form-group .form-control:focus {
   border-color: #486B46;
 }
-form .form-group .form-control.form-control {
+body form .form-group textarea.form-control {
   resize: vertical;
 }
-form .form-group .form-control .form-group button.btn {
+body form .form-group button.btn {
   background-color: #486B46;
   color: #fff;
   border: none;
@@ -101,15 +123,14 @@ form .form-group .form-control .form-group button.btn {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-form .form-group .form-control .form-group button.btn:hover {
+body form .form-group button.btn:hover {
   background-color: #486B46;
 }
-
-.pie-pagina {
+body .pie-pagina {
   width: 100%;
   background-color: #486B46;
 }
-.pie-pagina .grupo-1 {
+body .pie-pagina .grupo-1 {
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -118,25 +139,25 @@ form .form-group .form-control .form-group button.btn:hover {
   padding: 35px 0px;
   background-color: #486B46;
 }
-.pie-pagina .grupo-1 .box {
+body .pie-pagina .grupo-1 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.pie-pagina .grupo-1 .box figure img {
+body .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
-.pie-pagina .grupo-1 .box h2 {
+body .pie-pagina .grupo-1 .box h2 {
   margin-bottom: 25px;
   font-size: 20px;
   color: #fafafa;
 }
-.pie-pagina .grupo-1 .box p {
+body .pie-pagina .grupo-1 .box p {
   margin-bottom: 10px;
   color: #fafafa;
 }
-.pie-pagina .grupo-1 .box .red-social a {
+body .pie-pagina .grupo-1 .box .red-social a {
   color: #fafafa;
   text-decoration: none;
   width: 45px;
@@ -147,53 +168,25 @@ form .form-group .form-control .form-group button.btn:hover {
   text-align: center;
   transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .box .red-social a:hover {
+body .pie-pagina .grupo-1 .box .red-social a:hover {
   color: #AEB896;
 }
-.pie-pagina .grupo-2 {
+body .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
-.pie-pagina .grupo-2 small {
+body .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
-
 @media screen and (max-width: 800px) {
-  .pie-pagina .grupo-1 {
+  body .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
   }
-}
-@media screen and (max-width: 768px) {
-  #header .inner {
-    margin: 0;
-    padding: 0 2%;
-  }
-  section {
-    padding: 2em 5%;
-  }
-}
-.navbar {
-  background-color: #486B46;
-}
-.navbar a {
-  color: #fafafa;
-}
-.navbar .btn-outline-success {
-  color: #fafafa;
-  border-color: #fafafa;
-}
-.navbar .btn-outline-success:hover {
-  background-color: #fafafa;
-  color: #198754;
-}
-.navbar .form-control {
-  color: #fafafa;
-  border-color: #fafafa;
 }
 
 /*# sourceMappingURL=style.css.map */
