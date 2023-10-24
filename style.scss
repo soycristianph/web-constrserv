@@ -1,12 +1,14 @@
 @charset "UTF-8";
-/* Fuente FontAwesome */
+
+// Fuente FontAwesome
 @font-face {
   font-family: "FontAwesome";
   src: url("/fonts/fontawesome-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-/* Estilos generales */
+
+// Estilos generales
 body {
   font-family: sans-serif;
   margin: 0;
@@ -17,160 +19,163 @@ body {
   background-color: #fff;
 }
 
-/* Header */
+// Header
 #header {
   padding: 1em 0;
-}
-#header .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 5%;
-  flex: 1;
-}
-#header .inner .logo {
-  font-size: 1.5em;
-  text-decoration: none;
-}
-#header #nav {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#header #nav a {
-  text-decoration: none;
-  margin-right: 1em;
-  transition: color 0.3s;
-}
-#header #nav a:hover {
-  color: #486B46;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    flex: 1;
+    .logo {
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+    #nav {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        text-decoration: none;
+        margin-right: 1em;
+        transition: color 0.3s;
+        &:hover {
+          color: #486B46;
+        }
+      }
+    }
+  }
 }
 
-/* Banner */
+// Banner
 #banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: left;
   padding: 2em 2.5em;
-}
-#banner h1 {
-  font-size: 2.5em;
-  margin: 0;
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
 }
 
-/* Responsiveness */
+// Responsiveness
 @media screen and (max-width: 768px) {
   #banner {
     padding: 2em 1em;
   }
 }
-/* Secciones */
+
+// Secciones
 section {
   padding: 3em 5%;
   margin: 1em 0;
   flex: 1;
 }
 
-/* Servicios */
+// Servicios
 #services .card {
   border: 1px solid #ccc;
 }
 
-/* Formulario de Contacto */
+// Formulario de Contacto
 form {
   max-width: 600px;
   margin: 0 auto;
-}
-form .form-group {
-  margin-bottom: 20px;
-}
-form .form-group .form-control {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
-form .form-group .form-control:focus {
-  border-color: #486B46;
-}
-form .form-group textarea.form-control {
-  resize: vertical;
-}
-form .form-group button.btn {
-  background-color: #486B46;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-form .form-group button.btn:hover {
-  background-color: #486B46;
+  .form-group {
+    margin-bottom: 20px;
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+      &:focus {
+        border-color: #486B46;
+      }
+      &.form-control {
+        resize: vertical;
+      }
+      .form-group {
+        button.btn {
+          background-color: #486B46;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          &:hover {
+            background-color: #486B46;
+          }
+        }
+      }
+    }
+  }
 }
 
-/* Footer */
+// Footer
 .pie-pagina {
   width: 100%;
   background-color: #486B46;
-}
-.pie-pagina .grupo-1 {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 35px 0px;
-  background-color: #486B46;
-}
-.pie-pagina .grupo-1 .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.pie-pagina .grupo-1 .box figure img {
-  width: 250px;
-}
-.pie-pagina .grupo-1 .box h2 {
-  margin-bottom: 25px;
-  font-size: 20px;
-  color: #fafafa;
-}
-.pie-pagina .grupo-1 .box p {
-  margin-bottom: 10px;
-  color: #fafafa;
-}
-.pie-pagina .grupo-1 .box .red-social a {
-  color: #fafafa;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .box .red-social a:hover {
-  color: #AEB896;
-}
-.pie-pagina .grupo-2 {
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.pie-pagina .grupo-2 small {
-  font-size: 15px;
+  .grupo-1 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+    background-color: #486B46;
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      figure img {
+        width: 250px;
+      }
+      h2 {
+        margin-bottom: 25px;
+        font-size: 20px;
+        color: #fafafa;
+      }
+      p {
+        margin-bottom: 10px;
+        color: #fafafa;
+      }
+      .red-social a {
+        color: #fafafa;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+        transition: all 300ms ease;
+        &:hover {
+          color: #AEB896;
+        }
+      }
+    }
+  }
+  .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    small {
+      font-size: 15px;
+    }
+  }
 }
 
-/* Responsiveness */
+// Responsiveness
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -179,6 +184,7 @@ form .form-group button.btn:hover {
     padding: 35px 0px;
   }
 }
+
 @media screen and (max-width: 768px) {
   #header .inner {
     margin: 0;
@@ -186,5 +192,25 @@ form .form-group button.btn:hover {
   }
   section {
     padding: 2em 5%;
+  }
+}
+
+// Estilo visual personalizado agregado
+.navbar {
+  background-color: #486B46;
+  a {
+    color: #fafafa;
+  }
+  .btn-outline-success {
+    color: #fafafa;
+    border-color: #fafafa;
+    &:hover {
+      background-color: #fafafa;
+      color: #198754;
+    }
+  }
+  .form-control {
+    color: #fafafa;
+    border-color: #fafafa;
   }
 }

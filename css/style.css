@@ -188,3 +188,31 @@ form .form-group button.btn:hover {
     padding: 2em 5%;
   }
 }
+
+/* Estilo visual personalizado agregado */
+.navbar {
+  background-color: #486B46;
+}
+
+.navbar a {
+  color: #fafafa;
+}
+
+.btn-outline-success {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+
+.form-control {
+  color: #fafafa;
+  border-color: #fafafa;
+}
+.btn-outline-success {
+  color: #fafafa !important;
+  border-color: #fafafa !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #fafafa !important;
+  color: #198754 !important;
+}
