@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -9,11 +8,9 @@ body {
   background-color: #fff;
 }
 
-/* Header */
 #header {
   padding: 1em 0;
 }
-
 #header .inner {
   display: flex;
   justify-content: space-between;
@@ -21,61 +18,41 @@ body {
   margin: 0 5%;
   flex: 1;
 }
-
 #header .inner .logo {
   font-size: 1.5em;
   text-decoration: none;
   color: #fafafa;
 }
-
 #header #nav {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 #header #nav a {
   text-decoration: none;
   margin-right: 1em;
   transition: color 0.3s;
   color: #fafafa;
 }
-
 #header #nav a:hover {
   color: #0d2033;
 }
 
-/* Estilo visual personalizado navbar */
 .navbar {
   background-color: #486B46;
 }
-
-.navbar a {
-  color: #fafafa;
-}
-
-.btn-outline-success {
+.navbar a,
+.navbar .btn-outline-success {
   color: #fafafa;
   border-color: #fafafa;
 }
-
-.form-control {
-  color: #fafafa;
-  border-color: #fafafa;
-}
-
-.btn-outline-success {
-  color: #fafafa !important;
-  border-color: #fafafa !important;
-}
-
-.btn-outline-success:hover {
-  background-color: #fafafa !important;
+.navbar a:hover,
+.navbar .btn-outline-success:hover {
+  background-color: #fafafa;
   color: #198754 !important;
 }
 
-/* Banner */
 #banner {
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,50 +60,40 @@ body {
   text-align: left;
   padding: 2em 2.5em;
 }
-
 #banner h1 {
   font-size: 2.5em;
   margin: 0;
 }
 
-/* Responsiveness */
 @media screen and (max-width: 768px) {
   #banner {
     padding: 2em 1em;
   }
-
   #header .inner {
     margin: 0;
     padding: 0 2%;
   }
-
   section {
     padding: 2em 5%;
   }
 }
-
-/* Secciones */
 section {
   padding: 3em 5%;
   margin: 1em 0;
   flex: 1;
 }
 
-/* Servicios */
 #services .card {
   border: 1px solid #ccc;
 }
 
-/* Formulario de Contacto */
 form {
   max-width: 600px;
   margin: 0 auto;
 }
-
 form .form-group {
   margin-bottom: 20px;
 }
-
 form .form-group .form-control {
   width: 100%;
   padding: 10px;
@@ -135,15 +102,12 @@ form .form-group .form-control {
   font-size: 16px;
   transition: border-color 0.3s;
 }
-
 form .form-group .form-control:focus {
   border-color: #486B46;
 }
-
-form .form-group textarea.form-control {
+form .form-group .form-controltextarea.form-control {
   resize: vertical;
 }
-
 form .form-group button.btn {
   background-color: #486B46;
   color: #fff;
@@ -154,17 +118,14 @@ form .form-group button.btn {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 form .form-group button.btn:hover {
   background-color: #486B46;
 }
 
-/* Footer */
 .pie-pagina {
   width: 100%;
   background-color: #486B46;
 }
-
 .pie-pagina .grupo-1 {
   max-width: 1200px;
   margin: auto;
@@ -174,29 +135,24 @@ form .form-group button.btn:hover {
   padding: 35px 0px;
   background-color: #486B46;
 }
-
 .pie-pagina .grupo-1 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
-
 .pie-pagina .grupo-1 .box h2 {
   margin-bottom: 25px;
   font-size: 20px;
   color: #fafafa;
 }
-
 .pie-pagina .grupo-1 .box p {
   margin-bottom: 10px;
   color: #fafafa;
 }
-
 .pie-pagina .grupo-1 .box .red-social a {
   color: #fafafa;
   text-decoration: none;
@@ -208,23 +164,19 @@ form .form-group button.btn:hover {
   text-align: center;
   transition: all 300ms ease;
 }
-
 .pie-pagina .grupo-1 .box .red-social a:hover {
   color: #AEB896;
 }
-
 .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
-
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
 
-/* Responsiveness */
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -233,3 +185,5 @@ form .form-group button.btn:hover {
     padding: 35px 0px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

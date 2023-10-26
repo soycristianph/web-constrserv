@@ -1,7 +1,7 @@
 {
   "name": "web-constrserv",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este proyecto fue realizado como parte del curso de Desarrollo Web de Coderhouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.69.3"
+    "sass": "^1.69.5"
   }
 }
